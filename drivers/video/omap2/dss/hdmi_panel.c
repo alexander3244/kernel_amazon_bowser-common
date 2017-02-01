@@ -269,7 +269,6 @@ static int hdmi_panel_suspend(struct omap_dss_device *dssdev)
 
 	if (dssdev->state != OMAP_DSS_DISPLAY_ACTIVE) {
 		r = -EINVAL;
-		dssdev->activate_after_resume = true;
 		goto err;
 	}
 
